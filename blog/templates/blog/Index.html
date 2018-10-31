@@ -1,0 +1,260 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Mis perris</title>
+	<meta charset="utf-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
+    <!--Estilos propios.css-->
+    <link rel="stylesheet" href="{% static 'css/EstilosPropios.css' %}">
+    <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+<body>
+	<!---->
+		<div id="home" class="DivTriple col s12 scrollspy">
+        	<a href="" > <img alt="perro" src="{% static 'img/logo.png' %}" ></a>  
+     	</div>
+	
+	 
+	
+		<div class=" DivTriple col s12">
+		  	 <ul class="topnav">
+			  <li><a href="#home">inicio</a></li>
+			  <li><a href="#rescat">quienes somos</a></li>
+			  <li><a href="#servicios">servicios</a></li>
+			  <li><a href="#contacto">contáctenos</a></li>
+			 </ul>
+	 	</div>
+	
+	<!---->
+		<div id="adoptados" class=" DivCarrusel col s12">
+      	
+				
+				<div class="slider" >
+				    <ul class="slides">
+				    	<li>
+				    		<img alt="perro" src="{% static 'img/Tom.jpg' %}"> <!-- random image -->
+					        <div class="caption left-align">
+					          <h3 class="light light-text ">Tom</h3>
+
+					          <h5 class="light light-text text-lighten-5 " >"Fue una una gran idea adoptarlo".</h5>
+					        </div>
+				    	</li>
+				    	<li>
+				    		<img alt="perro" src="{% static 'img/Duque.jpg' %}">
+				    		<div class="caption left-align">
+					          <h3 class="light light-text ">Duque</h3>
+
+					          <h5 class="light light-text text-lighten-3">"Ahora tengo un mejor amigo".</h5>
+					        </div>
+				    	</li>
+				    	<li>
+				    		<div class="caption left-align">
+					          <h3 >Apolo</h3>
+
+					          <h5 class="light light-text text-lighten-3 ">"Sé que no me abandonará".</h5>
+					        </div>
+				    		<img alt="perro" src="{% static 'img/Apolo.jpg' %}">
+				    	</li>
+				    	
+				    </ul>
+				</div>
+
+      </div>
+	
+	<div class="row">
+		<div  class=" DivTriple col s12" >
+
+	        <a href="#" > <img alt="face"  class="imgIcono" src="{% static 'img/facebook.png' %}"  ></a>
+	        <a href="#" > <img  alt="plus" class="imgIcono" src="{% static 'img/googleplus.png' %}"  ></a>
+	        <a href="#" > <img  alt="insta" class="imgIcono" src="{% static 'img/instagram.png' %}"  ></a>
+	        <a href="#" > <img  alt="email" class="imgIcono" src="{% static 'img/email.png' %}"  ></a>  
+	    </div>
+	</div>
+	 
+	 
+    <div class="row">
+		<div id="rescat" class=" DivRescate col s12 scrollspy">
+	        <div id="cuadroArticle">
+
+	          <section>   
+	            <h2>Rescate</h2>
+	              <h4>Etapa uno</h4>
+	              <p>
+	                Rescatamos perros en situación de peligro y/o abandono. Los rehabilitamos y los preparamos para buscarles un lugar.
+	              </p>
+	              <br>
+	              <img alt="rescate" src="{% static 'img/rescate.jpg' %}" >
+	          </section>
+	        </div>  
+      </div>
+	</div>
+	<div class="row">
+		<div id="servicios" class=" DivRescate col s12 scrollspy" >
+	        <div id="cuadroArticle2">
+	          <section>
+	            <img alt="crow" src="{% static 'img/crowfunding.jpg' %}" >
+	            <h2>Crowfunding</h2>
+	            <h4>Financiamiento</h4>
+	            <p>
+	              Sigue nuestras redes sociales para informarte acerca de las diversas campañas y actividades que realizamos para obtener financiamento para seguir ayudando.
+	            </p>
+	            <br>
+	            <a href="" class="boton_2">Campañas</a>
+	             
+	          </section>
+			</div>  
+      	</div>
+	</div>
+      
+      
+      <div  class=" DivTriple col s12">
+          	<div class="row">
+          		<div class="col s6 m3"> <!--tarjeta 1-->
+			      <div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img alt="perro" class="activator" src="{% static 'img/Bigotes.jpg' %}">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">Bigotes<i class="material-icons right">more_vert</i></span>
+				      
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">Bigotes<i class="material-icons right">close</i></span>
+				      <p  class="EstiloCard">Es un perro café claro, con grandes bigotes.
+				      Perro muy servicial y protector</p>
+				    </div>
+			  	  </div>
+			    </div>
+			    <div class="col s6 m3"> <!-- tarjeta 2 -->
+			      <div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img alt="perro" class="activator" src="{% static 'img/Chocolate.jpg' %}">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">Chocolate<i class="material-icons right">more_vert</i></span>
+				      
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">Chocolate<i class="material-icons right">close</i></span>
+				      <p class="EstiloCard">Es un perro café claro y pelo corto con unas orejas muy grandes</p>
+				    </div>
+			  	  </div>
+			    </div>
+			    <div class="col s6 m3"><!-- tarjeta 3 -->
+			      <div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img alt="perro" class="activator" src="{% static 'img/Luna.jpg' %}">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">Luna<i class="material-icons right">more_vert</i></span>
+				      
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">Luna<i class="material-icons right">close</i></span>
+				      <p class="EstiloCard">Es tiernas y juguetona</p>
+				    </div>
+			  	  </div>
+			    </div>
+			    <div class="col s6 m3"><!-- tarjeta 4 -->
+			      <div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img alt="perro" class="activator" src="{% static 'img/Maya.jpg' %}">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">Maya<i class="material-icons right">more_vert</i></span>
+				      
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">Maya<i class="material-icons right">close</i></span>
+				      <p class="EstiloCard">Es la mas pequeña de todas, de un color café claro con ocico negro, es aún una cachorrita</p>
+				    </div>
+			  	  </div>
+			    </div>
+
+          	</div><!--div del row-->
+          	<div class="row">
+			    <div class="col s6 m4"> <!--tarjeta 5-->
+			      <div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img alt="perro" class="activator" src="{% static 'img/Oso.jpg' %}">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">Oso<i class="material-icons right">more_vert</i></span>
+				      
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">Oso<i class="material-icons right">close</i></span>
+				      <p class="EstiloCard">Es un perro de color negro con pintitas café y blancas, es de raza grande, ideal para cuidado de un ambiente grande</p>
+				    </div>
+			  	  </div>
+			    </div>
+			    <div class="col s6 m4"> <!-- tarjeta 6 -->
+			      <div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img alt="perro" class="activator" src="{% static 'img/Pexel.jpg' %}">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">Pexel<i class="material-icons right">more_vert</i></span>
+				      
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">Pexel<i class="material-icons right">close</i></span>
+				      <p class="EstiloCard">Es un perrito crespo de pelo blanco, gran cuidador de niños</p>
+				    </div>
+			  	  </div>
+			    </div>
+			    <div class="col s6 m4"><!-- tarjeta 7 -->
+			      <div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img alt="perro" class="activator" src="{% static 'img/Wifi.jpg' %}">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">Wifi<i class="material-icons right">more_vert</i></span>
+				      
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">Wifi<i class="material-icons right">close</i></span>
+				      <p class="EstiloCard">Es una perrita de pelo corto y liso, con manchas café y blanco, juguetona</p>
+				    </div>
+			  	  </div>
+			    </div>
+  			</div><!--div del row-->
+      </div><!--div del col s12-->
+      <!--Boton flotante-->
+	    <div class="fixed-action-btn">
+		  <a  target="_blank" class="btn-flat waves-effect waves-red btn-large green" onclick="" href="{% static 'Formulario/Form.html' %}"> ¡Registrate!
+		  	<!--<a  target="_blank" class="btn-floating btn-large green" onclick="location.href='https://www.facebook.com'">-->
+		    <i class="large material-icons">fingerprint</i>
+		  </a>
+		</div>
+	      <div  class="DivFooter col s12">Desarrollo web y mobile</div>
+	   
+    	
+		
+      <!--JavaScript at end of body for optimized loading-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+      <script  src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+
+      <script  src="{% static 'js/materialize.min.js' %}"></script>
+	  
+	  
+      <script>
+		$(document).ready(function(){
+			$('.slider').slider({
+				full_width:true,
+				full_height: true
+			});
+			$('.scrollspy').scrollSpy();
+			$('.materialbox').materialbox();
+			$('.fixed-action-btn').floatingActionButton();})</script>
+
+</body>
+</html>

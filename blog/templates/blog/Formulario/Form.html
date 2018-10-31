@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+ <html lang="es">
+   <head>	
+		<link rel="stylesheet" href="estilos.css">
+	<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
+    <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0"/>
+	<title>Contacto "Mis Perris"</title>
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+    <link rel = "stylesheet"
+		href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel = "stylesheet"
+		href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script> 
+	<script>   
+		$(document).ready(function() {
+			$('select').material_select();
+		});
+	</script>
+    </head>
+		
+    <body class= "container">
+		<header>
+			<H1> ¡Hazte Socio! </H1>
+		</header>
+		<div class="row">
+		<form class="col s12">
+			<div class="row">
+				<div class="input-field col s6">
+					<i class="material-icons prefix">perm_identity</i>
+					<input id="first_name" type="text" required placeholder="Ingresa primer nombre" title="Solo letras permitidas" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{3,48}" class="validate">
+					<label for="first_name">Primer Nombre</label>
+				</div>
+				<div class="input-field col s6">
+					<i class="material-icons prefix">perm_identity</i>
+					<input id="first_name1" type="text" required placeholder="Ingresa segundo nombre" title="Solo letras permitidas" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{3,48}" class="validate">
+					<label for="first_name1">Segundo Nombre</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s6">
+					<i class="material-icons prefix">perm_identity</i>
+					<input id="last_name1" type="text" required placeholder="Ingresa apellido paterno" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{3,48}" class="validate">
+					<label for="last_name1">Apellido Paterno</label>
+				</div>
+				<div class="input-field col s6">
+					<i class="material-icons prefix">perm_identity</i>
+					<input id="last_name2" type="text" required placeholder="Ingresa apellido materno" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{3,48}" class="validate">
+					<label for="last_name2">Apellido Materno</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s6">
+					<i class="material-icons prefix">perm_identity</i>
+					<input id="run" type="text" placeholder="Ingresa run. Ej: 19453129-4" required oninput="checkRut(this)" class="validate" maxlength="10">
+					<label for="run">Run</label>
+					<script src="ValidarRUT.js"></script>
+				</div>
+				<div class="input-field col s6">
+					<i class="material-icons prefix">email</i>
+					<input id="email" type="email" required placeholder="Ingrese correo" class="validate">
+					<label for="email">Correo</label>
+				</div>
+			</div>
+			<div class = "row">
+				<div class="input-field col s6">
+					<i class="material-icons prefix">local_phone</i>
+					<input id="telefono" type="tel" required placeholder="Ingrese numero telefonico" class="validate" pattern="[0-9]{9}" maxlength="9">
+					<label for="telefono">Telefono</label>
+				</div>
+				<div class="input-field col s12 m6">
+					<div class="input-field col s1">
+						<i class="material-icons prefix">home</i>
+					</div>
+					<div class="input-field col s11">
+						<select>
+							<option value="" disabled selected>Eliga el tipo de Vivienda</option>
+							<option value="1">Casa con patio grande</option>
+							<option value="2">Casa con patio pequeño</option>
+							<option value="3">Casa sin patio</option>
+							<option value="4">Departamento</option>
+						</select>
+						<label>Tipo de Vivienda</label> 
+					</div>
+
+				</div>				
+            </div>
+			<div class="row">
+				<div class="input-field col s12 m6">
+					<select>
+						<option value="" disabled selected>Eliga la región</option>
+						<option value="1">Región Metropolitana</option>
+						<option value="1">XV Arica y Parinacota</option>
+						<option value="1">I Tarapacá</option>
+						<option value="1">II Antofagasta</option>
+						<option value="1">III Atacama</option>
+						<option value="1">IV Coquimbo</option>
+						<option value="1">V Valparaíso</option>
+						<option value="1">VI O'Higgins</option>
+						<option value="1">VII Maule</option>
+						<option value="1">VIII Biobío</option>
+						<option value="1">IX La Araucanía</option>
+						<option value="1">X Los Lagos</option>
+						<option value="1">XI Aysén</option>
+						<option value="1">XII Magallanes y Antártica</option>
+					</select>
+					<label>Región</label>
+				</div>
+				<div class="input-field col s12 m6">
+					<select>
+						<option value="" disabled selected>Eliga la ciudad</option>
+						<option value="1">Arica</option>
+						<option value="2">Iquique</option>
+						<option value="3">Antofagasta</option>
+						<option value="4">Copiapó</option>
+						<option value="5">La Serena</option>
+						<option value="6">Rancagua</option>
+						<option value="7">Talca</option>
+						<option value="8">Concepcion</option>
+						<option value="9">Temuco</option>
+						<option value="10">Valdivia</option>
+						<option value="11">Puerto Montt</option>
+						<option value="12">Punta Arenas</option>
+						<option value="13">Santiago</option>
+						<option value="14">Puerto Natales</option>
+					</select>
+					<label>Ciudad</label>
+				</div>
+			</div>
+			<div class="row">
+				<label>Fecha de Nacimiento</label>
+				<input type="date" class="datepicker" id="fecha" max="2000-12-31">
+			</div>
+			<p class="input-field col s6">
+				<button class="waves-effect waves-light btn" type="submit"><i class="material-icons right">send</i>enviar</button>
+			</p>
+		</form>
+		</div>
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="js/materialize.min.js"></script>
+      <script>
+/*$(function() {
+$('#fecha').datepicker({ 
+	format: 'dd/mm/yyyy',
+	minDate: new Date(2018,12,1) });
+});*/
+</script>
+
+   </body>
+ </html>

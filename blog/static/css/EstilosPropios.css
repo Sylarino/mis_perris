@@ -1,0 +1,215 @@
+
+body {margin: 0;
+background: #ffffff}
+/*navbar*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5eb294;
+
+}
+
+li {
+    border-right: 1px solid #6dccaa;
+    border-top: 0px solid #bbb;
+    border-bottom: 1px solid #6dccaa;
+    
+    
+}
+
+li:last-child {
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+
+
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+/*navbar*/
+
+h3
+{
+  background-color: black; opacity: 0.6;
+  margin-bottom: 0px;
+  margin: -10px;
+  padding-bottom: 0px; padding-top: 0px; 
+}
+h5
+{
+  background-color: black; opacity: 0.6;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+}
+
+#imgIcono
+{
+  width:50px;
+}
+.DivTriple
+{
+	background-color: #6dccaa;
+  color: #fff;
+  text-align: center;
+  border-bottom: 0px solid #fff;
+  margin: 0;
+
+}
+
+.DivCarrusel
+{
+	background-color: #6dccaa;
+	border-bottom: 0px solid #fff;
+	width: auto;
+	height: 420px;
+	
+}
+
+.slider {
+	/*height: 700px;*/
+  	width: auto;
+  	margin: 0 auto;
+  	max-height: 421px;
+
+}
+/*slider prueba*/
+.slider .indicators .indicator-item {
+  background-color: #666666;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.slider .indicators .indicator-item.active {
+  background-color: #ffffff;
+}
+
+
+/*slider prueba*/
+
+.DivImg
+{
+	/*background-color: orange;*/
+	color: #fff;
+  text-align: center;
+
+  
+}
+
+#cuadroArticle
+{
+	/*clear: both;*/
+	/*float: left;*/
+	font-family: Arial, sans-serif;
+	background: #ffffff;
+	color: #000000;
+	width: 100%;
+	height: 100%;
+	margin-top: 10px;
+	border-radius: 0px;
+	text-align: right;
+}
+
+#cuadroArticle2
+{
+	/*clear: both;*/
+	/*float: right;*/
+	font-family: Arial, sans-serif;
+	background: #ffffff;
+	color: #000000;
+	width: 100%;
+	height: 100%;
+	margin-top: 10px;
+	border-radius: 0px;
+	text-align: left;
+}
+
+.DivRescate
+{
+	margin-top: -20px;
+  margin-bottom: 12px;
+}
+
+/*Boton*/
+.boton_2{
+    text-decoration: none;
+    padding: 10px;
+    font-family: arial;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 800;
+    font-size: 12px;
+    color: black;
+    background-color: #ffffff;
+    border: 2px solid black;
+  }
+  .boton_2:hover{
+    color: #117864;
+    background-color: #48C9B0;
+    text-decoration: none;
+  }
+ 
+
+  .EstiloCard
+  {
+    color: black;
+    font-size: 25px; 
+  }
+
+
+  /*Pie de página*/
+footer {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 40px;
+   background-color: grey;
+   color: white;
+   text-align: center;
+}
+
+.DivFooter
+{
+	background-color: grey;
+  color: white;
+  text-align: center;
+  border-bottom: 0px solid;
+  border-top: 0px;
+  height: 60px;
+  width: auto;
+}
+
+.row:last-child { /* elimina bordes de row*/
+    margin-bottom: 0;
+}
+
+.tamañoLetraBtn
+{
+  
+
+}
